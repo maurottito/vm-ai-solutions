@@ -2,7 +2,7 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-12 bg-black">
       <div className="mx-auto max-w-4xl px-4 py-28 text-center sm:px-6 sm:py-36">
-        <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+        <h2 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
           Engineering depth.
           <br />
           <span className="bg-gradient-to-r from-[#0090f7] via-[#6d5df6] to-[#e64aa9] bg-clip-text text-transparent">

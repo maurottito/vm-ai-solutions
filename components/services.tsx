@@ -31,10 +31,10 @@ export function Services() {
   return (
     <section id="services" className="scroll-mt-12 bg-[#f5f5f7]">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <h2 className="text-center text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
+        <h2 className="text-center text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
           What we do.
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-center text-lg text-[#6e6e73]">
+        <p className="mx-auto mt-6 max-w-xl text-center text-xl text-[#6e6e73] sm:text-2xl">
           End-to-end delivery — from problem framing and prototyping to
           production systems.
         </p>

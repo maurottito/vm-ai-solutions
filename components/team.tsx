@@ -64,7 +64,7 @@ export function Team() {
   return (
     <section id="team" className="scroll-mt-12 bg-[#f5f5f7]">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <h2 className="text-center text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
+        <h2 className="text-center text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
           The team.
         </h2>
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
