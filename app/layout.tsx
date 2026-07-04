@@ -12,8 +12,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://maurottito.github.io/vm-ai-solutions"),
+  icons: {
+    icon: [
+      { url: `${basePath}/favicon.ico`, sizes: "32x32" },
+      { url: `${basePath}/icon.png`, type: "image/png", sizes: "64x64" },
+    ],
+    shortcut: `${basePath}/favicon.ico`,
+    apple: `${basePath}/apple-icon.png`,
+  },
   title: "VM AI Solutions — AI-Powered Software & Analytics",
   description:
     "VM AI Solutions LLC builds custom AI systems, data analytics platforms, and software for businesses and the public sector.",
