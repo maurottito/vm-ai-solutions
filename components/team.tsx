@@ -40,7 +40,7 @@ const team = [
   {
     name: "Vanina Vivas",
     initials: "VV",
-    photo: null,
+    photo: "/team-vanina.jpg",
     role: "Research & Strategy Specialist",
     bio: "Behavioral economics researcher at Universidad del Pacífico, with published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
