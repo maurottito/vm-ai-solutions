@@ -21,7 +21,7 @@ const team = [
   {
     name: "Mauro Ttito",
     initials: "MT",
-    photo: "/team-mauro.jpg",
+    photo: "/mauro.jpg",
     role: "AI & Software Engineering Specialist",
     bio: "Data scientist and software engineer focused on AI systems, RAG pipelines, and analytics platforms. MS in Computational Analysis and Public Policy, University of Chicago.",
     links: [
@@ -40,7 +40,7 @@ const team = [
   {
     name: "Vanina Vivas",
     initials: "VV",
-    photo: "/team-vanina.jpg",
+    photo: "/vanina.jpg",
     role: "Research & Strategy Specialist",
     bio: "Behavioral economics researcher at Universidad del Pacífico, with published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
