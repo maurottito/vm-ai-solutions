@@ -34,7 +34,7 @@ export function SiteHeader() {
   );
 }
 
-export function LogoMark({ className = "size-6" }: { className?: string }) {
+function LogoMark({ className = "size-6" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 32 32"
