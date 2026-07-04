@@ -42,7 +42,7 @@ const team = [
     initials: "VV",
     photo: "/vanina.jpg",
     role: "Research & Strategy Specialist",
-    bio: "Economics researcher with published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
+    bio: "Economics researcher with over 5 years of public-sector experience and published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
       {
         label: "LinkedIn",
