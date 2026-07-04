@@ -17,11 +17,13 @@ function GithubIcon({ className }: { className?: string }) {
   );
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const team = [
   {
     name: "Mauro Ttito",
     initials: "MT",
-    photo: "/mauro.jpg",
+    photo: `${basePath}/mauro.jpg`,
     role: "AI & Software Engineering Specialist",
     bio: "Data scientist and software engineer focused on AI systems, RAG pipelines, and analytics platforms. MS in Computational Analysis and Public Policy, University of Chicago.",
     links: [
@@ -40,7 +42,7 @@ const team = [
   {
     name: "Vanina Vivas",
     initials: "VV",
-    photo: "/vanina.jpg",
+    photo: `${basePath}/vanina.jpg`,
     role: "Research & Strategy Specialist",
     bio: "Economics researcher with over 5 years of public-sector experience and published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
