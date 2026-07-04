@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section className="bg-white px-4 py-28 text-center sm:py-40">
       <p className="mb-5 text-lg font-medium text-[#6e6e73]">VM AI Solutions</p>
-      <h1 className="mx-auto max-w-4xl text-balance text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
+      <h1 className="mx-auto max-w-4xl text-balance text-5xl font-bold tracking-tight text-[#1d1d1f] sm:text-7xl">
         AI-powered software.
         <br />
         Built for impact.
