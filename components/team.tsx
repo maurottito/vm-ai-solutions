@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GraduationCapIcon } from "lucide-react";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -20,6 +21,7 @@ const team = [
   {
     name: "Mauro Ttito",
     initials: "MT",
+    photo: "/team-mauro.jpg",
     role: "AI & Software Engineering Specialist",
     bio: "Data scientist and software engineer focused on AI systems, RAG pipelines, and analytics platforms. MS in Computational Analysis and Public Policy, University of Chicago.",
     links: [
@@ -38,6 +40,7 @@ const team = [
   {
     name: "Vanina Vivas",
     initials: "VV",
+    photo: null,
     role: "Research & Strategy Specialist",
     bio: "Behavioral economics researcher at Universidad del Pacífico, with published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
@@ -68,9 +71,19 @@ export function Team() {
               key={member.name}
               className="rounded-3xl bg-white p-10 text-center"
             >
-              <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-[#1d1d1f] text-xl font-semibold text-white">
-                {member.initials}
-              </div>
+              {member.photo ? (
+                <Image
+                  src={member.photo}
+                  alt={member.name}
+                  width={96}
+                  height={96}
+                  className="mx-auto size-24 rounded-full object-cover"
+                />
+              ) : (
+                <div className="mx-auto flex size-24 items-center justify-center rounded-full bg-[#1d1d1f] text-2xl font-semibold text-white">
+                  {member.initials}
+                </div>
+              )}
               <h3 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f]">
                 {member.name}
               </h3>
