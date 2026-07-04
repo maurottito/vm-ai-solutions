@@ -26,7 +26,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Button size="sm" render={<a href="#contact" />}>
+        <Button size="sm" nativeButton={false} render={<a href="#contact" />}>
           Contact us
         </Button>
       </div>

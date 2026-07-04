@@ -15,6 +15,7 @@ export function Contact() {
         <Button
           size="lg"
           className="mt-8"
+          nativeButton={false}
           render={<a href="mailto:maurottito@gmail.com" />}
         >
           <MailIcon className="size-4" />

@@ -15,10 +15,15 @@ export function Hero() {
         into working products.
       </p>
       <div className="mt-10 flex items-center justify-center gap-4">
-        <Button size="lg" render={<a href="#contact" />}>
+        <Button size="lg" nativeButton={false} render={<a href="#contact" />}>
           Start a project
         </Button>
-        <Button size="lg" variant="outline" render={<a href="#services" />}>
+        <Button
+          size="lg"
+          variant="outline"
+          nativeButton={false}
+          render={<a href="#services" />}
+        >
           Our services
         </Button>
       </div>
