@@ -1,10 +1,3 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { GraduationCapIcon } from "lucide-react";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -26,6 +19,7 @@ function GithubIcon({ className }: { className?: string }) {
 const team = [
   {
     name: "Mauro Ttito",
+    initials: "MT",
     role: "AI & Software Engineering Specialist",
     bio: "Data scientist and software engineer focused on AI systems, RAG pipelines, and analytics platforms. MS in Computational Analysis and Public Policy, University of Chicago.",
     links: [
@@ -43,6 +37,7 @@ const team = [
   },
   {
     name: "Vanina Vivas",
+    initials: "VV",
     role: "Research & Strategy Specialist",
     bio: "Behavioral economics researcher at Universidad del Pacífico, with published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
@@ -62,36 +57,42 @@ const team = [
 
 export function Team() {
   return (
-    <section id="team" className="scroll-mt-14 border-t bg-muted/40">
-      <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight">Team</h2>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+    <section id="team" className="scroll-mt-12 bg-[#f5f5f7]">
+      <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <h2 className="text-center text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
+          The team.
+        </h2>
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {team.map((member) => (
-            <Card key={member.name}>
-              <CardHeader>
-                <CardTitle className="text-xl">{member.name}</CardTitle>
-                <CardDescription className="text-sm font-medium text-primary">
-                  {member.role}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{member.bio}</p>
-                <div className="mt-4 flex gap-4">
-                  {member.links.map((link) => (
-                    <a
-                      key={link.label}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      <link.icon className="size-4" />
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <div
+              key={member.name}
+              className="rounded-3xl bg-white p-10 text-center"
+            >
+              <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-[#1d1d1f] text-xl font-semibold text-white">
+                {member.initials}
+              </div>
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f]">
+                {member.name}
+              </h3>
+              <p className="mt-1 font-medium text-[#0071e3]">{member.role}</p>
+              <p className="mt-4 leading-relaxed text-[#6e6e73]">
+                {member.bio}
+              </p>
+              <div className="mt-6 flex justify-center gap-5">
+                {member.links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[#0066cc] hover:underline"
+                  >
+                    <link.icon className="size-4" />
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

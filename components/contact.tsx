@@ -1,26 +1,21 @@
-import { Button } from "@/components/ui/button";
-import { MailIcon } from "lucide-react";
-
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-14 border-t">
-      <div className="mx-auto max-w-5xl px-4 py-20 text-center sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight">
-          Let&apos;s build something
+    <section id="contact" className="scroll-mt-12 bg-white">
+      <div className="mx-auto max-w-4xl px-4 py-28 text-center sm:px-6 sm:py-36">
+        <h2 className="text-balance text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-6xl">
+          Let&apos;s build something.
         </h2>
-        <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+        <p className="mx-auto mt-6 max-w-xl text-pretty text-lg text-[#6e6e73] sm:text-xl">
           Have a project in mind or want to explore what AI can do for your
-          organization? Get in touch.
+          organization?
         </p>
-        <Button
-          size="lg"
-          className="mt-8"
-          nativeButton={false}
-          render={<a href="mailto:maurottito@gmail.com" />}
+        <a
+          href="mailto:maurottito@gmail.com"
+          className="mt-10 inline-block rounded-full bg-[#0071e3] px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-[#0077ed]"
         >
-          <MailIcon className="size-4" />
-          maurottito@gmail.com
-        </Button>
+          Get in touch
+        </a>
+        <p className="mt-4 text-sm text-[#6e6e73]">maurottito@gmail.com</p>
       </div>
     </section>
   );

@@ -1,9 +1,3 @@
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { BotIcon, ChartBarIcon, CodeIcon, BrainIcon } from "lucide-react";
 
 const services = [
@@ -11,13 +5,13 @@ const services = [
     icon: BotIcon,
     title: "AI Solutions",
     description:
-      "Custom chatbots, retrieval-augmented generation (RAG) systems, and AI assistants built on state-of-the-art language models and tailored to your data.",
+      "Custom chatbots, RAG systems, and AI assistants built on state-of-the-art language models — tailored to your data.",
   },
   {
     icon: ChartBarIcon,
     title: "Data Analytics",
     description:
-      "Interactive dashboards, policy and impact evaluation, and analytics pipelines that turn raw data into clear, actionable insight.",
+      "Interactive dashboards, policy and impact evaluation, and analytics pipelines that turn raw data into clear insight.",
   },
   {
     icon: CodeIcon,
@@ -27,7 +21,7 @@ const services = [
   },
   {
     icon: BrainIcon,
-    title: "Machine Learning Applications",
+    title: "Machine Learning",
     description:
       "Predictive models, forecasting, and applied machine learning integrated directly into your products and workflows.",
   },
@@ -35,24 +29,32 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-14 border-t bg-muted/40">
-      <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
-        <h2 className="text-3xl font-semibold tracking-tight">Services</h2>
-        <p className="mt-3 max-w-2xl text-muted-foreground">
-          End-to-end delivery: from problem framing and prototyping to
+    <section id="services" className="scroll-mt-12 bg-[#f5f5f7]">
+      <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <h2 className="text-center text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
+          What we do.
+        </h2>
+        <p className="mx-auto mt-4 max-w-xl text-center text-lg text-[#6e6e73]">
+          End-to-end delivery — from problem framing and prototyping to
           production systems.
         </p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {services.map((service) => (
-            <Card key={service.title}>
-              <CardHeader>
-                <service.icon className="mb-2 size-8 text-primary" />
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription className="text-base leading-relaxed">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div
+              key={service.title}
+              className="rounded-3xl bg-white p-10 transition-transform duration-300 hover:scale-[1.015]"
+            >
+              <service.icon
+                className="size-9 text-[#0071e3]"
+                strokeWidth={1.6}
+              />
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f]">
+                {service.title}
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#6e6e73]">
+                {service.description}
+              </p>
+            </div>
           ))}
         </div>
       </div>
