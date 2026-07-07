@@ -10,12 +10,12 @@ export function Contact() {
           organization?
         </p>
         <a
-          href="mailto:vmaisolution@gmail.com"
+          href="mailto:hello@vmaisolutions.me"
           className="mt-10 inline-block rounded-full bg-[#0071e3] px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-[#0077ed]"
         >
           Get in touch
         </a>
-        <p className="mt-4 text-sm text-[#6e6e73]">vmaisolution@gmail.com</p>
+        <p className="mt-4 text-sm text-[#6e6e73]">hello@vmaisolutions.me</p>
       </div>
     </section>
   );
