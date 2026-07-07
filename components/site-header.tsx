@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const links = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
@@ -11,22 +9,22 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-[rgba(251,251,253,0.8)] backdrop-blur-xl saturate-150">
       <div className="mx-auto flex h-12 max-w-5xl items-center justify-between px-4 sm:px-6">
-        <Link
+        <a
           href="#"
           className="flex items-center gap-2 text-sm font-semibold text-[#1d1d1f]"
         >
           <LogoMark className="size-5" />
           VM AI Solutions
-        </Link>
+        </a>
         <nav className="flex items-center gap-5 text-xs text-[#1d1d1f]/80 sm:gap-8">
           {links.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className="transition-opacity hover:opacity-60"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </nav>
       </div>
