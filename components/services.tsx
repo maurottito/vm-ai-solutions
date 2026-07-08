@@ -31,10 +31,7 @@ export function Services() {
   return (
     <section id="services" className="scroll-mt-14 bg-gray-soft">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.1em] text-navy/60">
-          Services
-        </p>
-        <h2 className="mt-3 text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
+        <h2 className="text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
           What we do.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-center text-xl font-light text-navy/60 sm:text-2xl">

@@ -14,9 +14,9 @@ export function SiteFooter() {
         <img
           src="/brand/logo-horizontal-blanco.svg"
           alt="VM AI Solutions"
-          className="h-8 w-auto"
+          className="h-12 w-auto"
         />
-        <div className="mt-6 flex items-center justify-between border-t border-white/15 pt-6 text-xs text-white/70">
+        <div className="mt-6 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/70 sm:flex-row sm:items-center sm:justify-between">
           <p>Copyright © {new Date().getFullYear()} VM AI Solutions LLC. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a
@@ -24,7 +24,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="VM AI Solutions on LinkedIn"
-              className="text-white/70 transition-colors hover:text-white"
+              className="text-white/70 transition-colors hover:text-white focus-visible:outline-white"
             >
               <LinkedinIcon className="h-4 w-4" />
             </a>

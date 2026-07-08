@@ -14,7 +14,7 @@ export function SiteHeader() {
           <img
             src="/brand/logo-horizontal.svg"
             alt="VM AI Solutions"
-            className="h-8 w-auto"
+            className="h-10 w-auto"
           />
         </a>
         <nav className="flex items-center gap-5 text-[11px] uppercase tracking-[0.08em] text-navy/80 sm:gap-8">

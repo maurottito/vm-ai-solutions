@@ -2,10 +2,7 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-14 bg-navy">
       <div className="mx-auto max-w-4xl px-4 py-28 text-center sm:px-6 sm:py-36">
-        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-white/60">
-          About
-        </p>
-        <h2 className="mt-3 text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+        <h2 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
           Engineering depth.
           <br />
           Research rigor.
