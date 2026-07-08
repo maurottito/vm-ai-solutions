@@ -12,9 +12,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/brand/logo-horizontal-blanco.svg"
+          src="/brand/logo-icono-blanco.svg"
           alt="VM AI Solutions"
-          className="h-12 w-auto"
+          className="h-9 w-auto"
         />
         <div className="mt-6 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/70 sm:flex-row sm:items-center sm:justify-between">
           <p>Copyright © {new Date().getFullYear()} VM AI Solutions LLC. All rights reserved.</p>

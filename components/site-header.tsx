@@ -12,9 +12,9 @@ export function SiteHeader() {
         <a href="#" aria-label="VM AI Solutions — home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/brand/logo-horizontal.svg"
+            src="/brand/logo-icono.svg"
             alt="VM AI Solutions"
-            className="h-10 w-auto"
+            className="h-7 w-auto"
           />
         </a>
         <nav className="flex items-center gap-5 text-[11px] uppercase tracking-[0.08em] text-navy/80 sm:gap-8">
