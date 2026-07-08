@@ -8,17 +8,15 @@ const montserrat = Montserrat({
   weight: ["300", "400", "600", "700"],
 });
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maurottito.github.io/vm-ai-solutions"),
+  metadataBase: new URL("https://vmaisolutions.me"),
   icons: {
     icon: [
-      { url: `${basePath}/favicon.ico`, sizes: "32x32" },
-      { url: `${basePath}/icon.png`, type: "image/png", sizes: "64x64" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "64x64" },
     ],
-    shortcut: `${basePath}/favicon.ico`,
-    apple: `${basePath}/apple-icon.png`,
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   title: "VM AI Solutions — AI-Powered Software & Analytics",
   description:

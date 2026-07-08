@@ -2,7 +2,7 @@
 
 Company website for VM AI Solutions LLC — custom AI systems, data analytics, and software development.
 
-Live at [maurottito.github.io/vm-ai-solutions](https://maurottito.github.io/vm-ai-solutions/).
+Live at [vmaisolutions.me](https://vmaisolutions.me/).
 
 ## Development
 

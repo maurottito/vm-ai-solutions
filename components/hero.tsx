@@ -1,11 +1,9 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export function Hero() {
   return (
     <section className="bg-white px-4 py-24 text-center sm:py-36">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`${basePath}/brand/logo-principal.svg`}
+        src="/brand/logo-principal.svg"
         alt="VM AI Solutions"
         className="mx-auto mb-10 w-44 sm:w-52"
       />

@@ -1,5 +1,3 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 const links = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
@@ -14,7 +12,7 @@ export function SiteHeader() {
         <a href="#" aria-label="VM AI Solutions — home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`${basePath}/brand/logo-horizontal.svg`}
+            src="/brand/logo-horizontal.svg"
             alt="VM AI Solutions"
             className="h-8 w-auto"
           />

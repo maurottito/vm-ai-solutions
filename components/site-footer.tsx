@@ -1,5 +1,3 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 function LinkedinIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -14,7 +12,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={`${basePath}/brand/logo-horizontal-blanco.svg`}
+          src="/brand/logo-horizontal-blanco.svg"
           alt="VM AI Solutions"
           className="h-8 w-auto"
         />

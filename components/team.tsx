@@ -17,12 +17,10 @@ function GithubIcon({ className }: { className?: string }) {
   );
 }
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 const team = [
   {
     name: "Mauro Ttito",
-    photo: `${basePath}/mauro.jpg`,
+    photo: "/mauro.jpg",
     role: "AI & Software Engineering Specialist",
     bio: "Data scientist and software engineer focused on AI systems, RAG pipelines, and analytics platforms. MS in Computational Analysis and Public Policy, University of Chicago.",
     links: [
@@ -40,7 +38,7 @@ const team = [
   },
   {
     name: "Vanina Vivas",
-    photo: `${basePath}/vanina.jpg`,
+    photo: "/vanina.jpg",
     role: "Research & Strategy Specialist",
     bio: "Economics researcher with over 5 years of public-sector experience and published work on entrepreneurship, strategy, and organizational behavior in emerging economies.",
     links: [
@@ -62,10 +60,7 @@ export function Team() {
   return (
     <section id="team" className="scroll-mt-14 bg-gray-soft">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.1em] text-navy/60">
-          Team
-        </p>
-        <h2 className="mt-3 text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
+        <h2 className="text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
           The team.
         </h2>
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
