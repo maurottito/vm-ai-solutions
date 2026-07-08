@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 function LinkedinIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -8,20 +10,28 @@ function LinkedinIcon({ className }: { className?: string }) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#f5f5f7]">
-      <div className="mx-auto flex max-w-5xl items-center justify-between border-t border-[#d2d2d7] px-4 py-6 text-xs text-[#6e6e73] sm:px-6">
-        <p>Copyright © {new Date().getFullYear()} VM AI Solutions LLC. All rights reserved.</p>
-        <div className="flex items-center gap-4">
-          <a
-            href="https://www.linkedin.com/company/vm-ai-solutions-llc"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="VM AI Solutions on LinkedIn"
-            className="text-[#6e6e73] transition-colors hover:text-[#1d1d1f]"
-          >
-            <LinkedinIcon className="h-4 w-4" />
-          </a>
-          <p>AI · Data · Software</p>
+    <footer className="bg-navy">
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${basePath}/brand/logo-horizontal-blanco.svg`}
+          alt="VM AI Solutions"
+          className="h-8 w-auto"
+        />
+        <div className="mt-6 flex items-center justify-between border-t border-white/15 pt-6 text-xs text-white/70">
+          <p>Copyright © {new Date().getFullYear()} VM AI Solutions LLC. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/company/vm-ai-solutions-llc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="VM AI Solutions on LinkedIn"
+              className="text-white/70 transition-colors hover:text-white"
+            >
+              <LinkedinIcon className="h-4 w-4" />
+            </a>
+            <p className="uppercase tracking-[0.08em]">AI · Data · Software</p>
+          </div>
         </div>
       </div>
     </footer>

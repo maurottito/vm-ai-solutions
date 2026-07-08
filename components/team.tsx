@@ -60,16 +60,19 @@ const team = [
 
 export function Team() {
   return (
-    <section id="team" className="scroll-mt-12 bg-[#f5f5f7]">
+    <section id="team" className="scroll-mt-14 bg-gray-soft">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <h2 className="text-center text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.1em] text-navy/60">
+          Team
+        </p>
+        <h2 className="mt-3 text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
           The team.
         </h2>
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {team.map((member) => (
             <div
               key={member.name}
-              className="rounded-3xl bg-white p-10 text-center"
+              className="rounded-3xl border border-navy/10 bg-white p-10 text-center"
             >
               <Image
                 src={member.photo}
@@ -78,11 +81,13 @@ export function Team() {
                 height={96}
                 className="mx-auto size-24 rounded-full object-cover"
               />
-              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f]">
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-navy">
                 {member.name}
               </h3>
-              <p className="mt-1 font-medium text-[#0071e3]">{member.role}</p>
-              <p className="mt-4 leading-relaxed text-[#6e6e73]">
+              <p className="mt-1 text-sm font-semibold uppercase tracking-[0.06em] text-navy/70">
+                {member.role}
+              </p>
+              <p className="mt-4 leading-relaxed text-navy/60">
                 {member.bio}
               </p>
               <div className="mt-6 flex justify-center gap-5">
@@ -92,7 +97,7 @@ export function Team() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[#0066cc] hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-navy hover:underline"
                   >
                     <link.icon className="size-4" />
                     {link.label}

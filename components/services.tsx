@@ -29,12 +29,15 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-12 bg-[#f5f5f7]">
+    <section id="services" className="scroll-mt-14 bg-gray-soft">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <h2 className="text-center text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.1em] text-navy/60">
+          Services
+        </p>
+        <h2 className="mt-3 text-center text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
           What we do.
         </h2>
-        <p className="mx-auto mt-6 max-w-xl text-center text-xl text-[#6e6e73] sm:text-2xl">
+        <p className="mx-auto mt-6 max-w-xl text-center text-xl font-light text-navy/60 sm:text-2xl">
           End-to-end delivery — from problem framing and prototyping to
           production systems.
         </p>
@@ -42,16 +45,13 @@ export function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-3xl bg-white p-10 transition-transform duration-300 hover:scale-[1.015]"
+              className="rounded-3xl border border-navy/10 bg-white p-10"
             >
-              <service.icon
-                className="size-9 text-[#0071e3]"
-                strokeWidth={1.6}
-              />
-              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f]">
+              <service.icon className="size-9 text-navy" strokeWidth={1.6} />
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-navy">
                 {service.title}
               </h3>
-              <p className="mt-3 leading-relaxed text-[#6e6e73]">
+              <p className="mt-3 leading-relaxed text-navy/60">
                 {service.description}
               </p>
             </div>

@@ -1,21 +1,24 @@
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-12 bg-white">
+    <section id="contact" className="scroll-mt-14 bg-white">
       <div className="mx-auto max-w-4xl px-4 py-28 text-center sm:px-6 sm:py-36">
-        <h2 className="text-balance text-5xl font-semibold tracking-tight text-[#1d1d1f] sm:text-7xl">
+        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-navy/60">
+          Contact
+        </p>
+        <h2 className="mt-3 text-balance text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
           Let&apos;s build something.
         </h2>
-        <p className="mx-auto mt-6 max-w-xl text-pretty text-lg text-[#6e6e73] sm:text-xl">
+        <p className="mx-auto mt-6 max-w-xl text-pretty text-lg font-light text-navy/60 sm:text-xl">
           Have a project in mind or want to explore what AI can do for your
           organization?
         </p>
         <a
           href="mailto:hello@vmaisolutions.me"
-          className="mt-10 inline-block rounded-full bg-[#0071e3] px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-[#0077ed]"
+          className="mt-10 inline-block rounded-full bg-navy px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-navy/90"
         >
           Get in touch
         </a>
-        <p className="mt-4 text-sm text-[#6e6e73]">hello@vmaisolutions.me</p>
+        <p className="mt-4 text-sm text-navy/60">hello@vmaisolutions.me</p>
       </div>
     </section>
   );

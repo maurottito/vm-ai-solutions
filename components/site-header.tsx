@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const links = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
@@ -7,21 +9,22 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 bg-[rgba(251,251,253,0.8)] backdrop-blur-xl saturate-150">
-      <div className="mx-auto flex h-12 max-w-5xl items-center justify-between px-4 sm:px-6">
-        <a
-          href="#"
-          className="flex items-center gap-2 text-sm font-semibold text-[#1d1d1f]"
-        >
-          <LogoMark className="size-5" />
-          VM AI Solutions
+    <header className="sticky top-0 z-50 border-b border-navy/10 bg-white/80 backdrop-blur-xl">
+      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
+        <a href="#" aria-label="VM AI Solutions — home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${basePath}/brand/logo-horizontal.svg`}
+            alt="VM AI Solutions"
+            className="h-8 w-auto"
+          />
         </a>
-        <nav className="flex items-center gap-5 text-xs text-[#1d1d1f]/80 sm:gap-8">
+        <nav className="flex items-center gap-5 text-[11px] uppercase tracking-[0.08em] text-navy/80 sm:gap-8">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="transition-opacity hover:opacity-60"
+              className="transition-colors hover:text-navy"
             >
               {link.label}
             </a>
@@ -29,25 +32,5 @@ export function SiteHeader() {
         </nav>
       </div>
     </header>
-  );
-}
-
-function LogoMark({ className = "size-6" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      aria-hidden="true"
-      className={className}
-    >
-      <rect width="32" height="32" rx="8" fill="#1d1d1f" />
-      <path
-        d="M8 10l5 12 3-7 3 7 5-12"
-        stroke="#f5f5f7"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }
